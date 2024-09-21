@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+  color: white;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(110, 200, 37);
+}
+section {
+  display: grid;
+  width: 60%;
+  height: 80vh;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px black;
+  grid-template-areas:
+    "A1 A1"
+    "A2 A2"
+    "A3 A3"
+    "A4 A4"
+    "A5 A5"
+    "A6 A7";
+
+  grid-auto-rows: 1fr;
+}
+.box1 {
+  grid-area: A1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* height: fit-content; */
+  font-size: 25px;
+  padding: 20px;
+  text-decoration: underline;
+}
+.box2 {
+  grid-area: A2;
+  display: flex;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.box2 input[type="number"] {
+  height: 40px;
+  outline: none;
+  width: 300px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+}
+.box2 input[type="submit"] {
+  height: 40px;
+  outline: none;
+  width: 100px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.box3 {
+  grid-area: A3;
+  display: flex;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enteredValue {
+  width: 250px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+.pcolor {
+  width: 80%;
+  height: inherit;
+  border-radius: inherit;
+  background-color: dodgerblue;
+}
+.box4 {
+  grid-area: A4;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.box5 {
+  grid-area: A5;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.box5 img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.textDeco {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box6 {
+  grid-area: A6;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box7 {
+  grid-area: A7;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.remaningChance {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: dodgerblue;
+  top: 10px;
+  right: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#startGame {
+  background-color: yellowgreen;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}

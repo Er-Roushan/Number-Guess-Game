@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess Game</title>
+    <link
+      rel="shortcut icon"
+      href="../FetchAPI/Favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="NumberGuessGame.css" />
+  </head>
+  <body>
+    <section>
+      <!-- box1 -->
+      <div class="box1">Number Guess Game</div>
+
+      <!-- box2 -->
+      <div class="box2">
+        <input
+          type="number"
+          placeholder="Enter the value between 1 & 100"
+          min="1"
+          max="100"
+          id="userInput"
+        />
+        <input type="submit" value="Enter" id="enter" />
+      </div>
+
+      <!-- box3 -->
+      <div class="box3">
+        <div class="enteredValue">
+          <div class="pcolor"></div>
+        </div>
+      </div>
+
+      <!-- box4 -->
+      <div class="box4">
+        <div id="grabed" class="hide">Yup...You guess the number</div>
+        <div id="notGrabed" class="hide">Nope...Please try again</div>
+        <div class="hide" id="startGame">Start Again</div>
+      </div>
+
+      <div class="box5"><img src="" alt="" id="gif" /></div>
+      <div class="box6">
+        <h4>Previous entered value:</h4>
+
+        <div class="textDeco" id="prevEnteredVal"></div>
+      </div>
+      <div class="box7">
+        <h4>💡Hint:</h4>
+        <div class="textDeco" id="hint"></div>
+      </div>
+    </section>
+
+    <div class="remaningChance">Chances Remain: 10</div>
+
+    <script src="NumberGuessGame.js"></script>
+  </body>
+</html>
